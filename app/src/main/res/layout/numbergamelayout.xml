@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:touchscreenBlocksFocus="false"
+    android:baselineAligned="false"
+    android:gravity="center_vertical|center_horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/guessBox"
+        android:hint="Input guess here"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/highLow"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:layout_below="@+id/submitCol"
+        android:layout_alignLeft="@+id/guessBox"
+        android:layout_alignStart="@+id/guessBox"
+        android:layout_alignRight="@+id/guessBox"
+        android:layout_alignEnd="@+id/guessBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/prev"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:layout_above="@+id/guessBox"
+        android:layout_marginBottom="82dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignRight="@+id/guessBox"
+        android:layout_alignEnd="@+id/guessBox"
+        android:layout_alignLeft="@+id/guessBox"
+        android:layout_alignStart="@+id/guessBox" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submitCol"
+        android:layout_below="@+id/guessBox"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
